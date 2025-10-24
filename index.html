@@ -23,8 +23,8 @@
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Lucide Icons CDN -->
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <!-- Lucide Icons CDN - Using a specific stable version -->
+    <script src="https://unpkg.com/lucide@0.294.0/dist/umd/lucide.js"></script>
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/styles.css">
@@ -233,10 +233,10 @@
     <!-- Footer -->
     <footer class="py-6 sm:py-8 px-4 sm:px-6 bg-gray-900 text-white">
         <div class="section-width text-center">
-            <p class="text-gray-400 mb-2 text-sm sm:text-base">&copy; 2024 CoachLytix. All rights reserved.</p>
+            <p class="text-gray-400 mb-2 text-sm sm:text-base">&copy; 2025 CoachLytix. All rights reserved.</p>
             <p class="text-gray-500 text-xs sm:text-sm px-2">
                 Built for golf coaches, by golf coaches. 
-                <a href="mailto:hello@coachlytics.com" class="text-green-400 hover:text-green-300 break-all sm:break-normal">hello@coachlytics.com</a>
+                <a href="mailto:willmorcombe.freelance@gmail.com" class="text-green-400 hover:text-green-300 break-all sm:break-normal">hello@coachlytics.com</a>
             </p>
         </div>
     </footer>
@@ -245,9 +245,13 @@
     <script>
         // Initialize Lucide icons
         document.addEventListener('DOMContentLoaded', function() {
-            // Initialize Lucide icons
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
+            // Initialize Lucide icons with error handling
+            try {
+                if (typeof lucide !== 'undefined' && typeof lucide.createIcons === 'function') {
+                    lucide.createIcons();
+                }
+            } catch (error) {
+                // Silently handle icon initialization errors
             }
             const form = document.getElementById('signupForm');
             const nameInput = document.getElementById('name');
@@ -364,9 +368,40 @@
                         }
                     }).then(response => {
                         if (response.ok) {
-                            // Success - hide form and show success message
+                            // Success - hide form and show custom popup
                             form.style.display = 'none';
-                            successMessage.classList.remove('hidden');
+                            
+                            // Create custom success popup
+                            const popup = document.createElement('div');
+                            popup.id = 'successPopup';
+                            popup.className = 'fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50 opacity-0 transition-opacity duration-200 ease-out';
+                            popup.innerHTML = `
+                                <div class="bg-white rounded-lg p-8 max-w-sm mx-4 transform translate-y-4 transition-all duration-200 ease-out">
+                                    <div class="text-center">
+                                        <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                            <svg class="w-6 h-6 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                            </svg>
+                                        </div>
+                                        <h3 class="text-lg font-medium text-gray-900 mb-2">Success!</h3>
+                                        <p class="text-gray-600 mb-6 text-sm">Thanks for joining early access. We'll be in touch soon!</p>
+                                        <button onclick="closeSuccessPopup()" class="bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition-colors text-sm">
+                                            Close
+                                        </button>
+                                    </div>
+                                </div>
+                            `;
+                            
+                            document.body.appendChild(popup);
+                            
+                            // Animate the popup in with subtle fade and slide
+                            setTimeout(() => {
+                                popup.classList.remove('opacity-0');
+                                popup.classList.add('opacity-100');
+                                const popupContent = popup.querySelector('div > div');
+                                popupContent.classList.remove('translate-y-4');
+                                popupContent.classList.add('translate-y-0');
+                            }, 10);
                         } else {
                             // Error - show error message
                             throw new Error('Form submission failed');
@@ -384,8 +419,12 @@
                         form.appendChild(errorDiv);
                         
                         // Reinitialize Lucide icons for the new element
-                        if (typeof lucide !== 'undefined') {
-                            lucide.createIcons();
+                        try {
+                            if (typeof lucide !== 'undefined' && lucide.createIcons) {
+                                lucide.createIcons();
+                            }
+                        } catch (error) {
+                            // Silently handle icon reinitialization errors
                         }
                         
                         // Remove error message after 5 seconds
@@ -426,6 +465,22 @@
                 });
             });
         });
+        
+        // Function to close the success popup
+        function closeSuccessPopup() {
+            const popup = document.getElementById('successPopup');
+            if (popup) {
+                popup.classList.remove('opacity-100');
+                popup.classList.add('opacity-0');
+                const popupContent = popup.querySelector('div > div');
+                popupContent.classList.remove('translate-y-0');
+                popupContent.classList.add('translate-y-4');
+                
+                setTimeout(() => {
+                    popup.remove();
+                }, 200);
+            }
+        }
     </script>
 </body>
 </html>
