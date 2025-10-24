@@ -1,10 +1,10 @@
-# CoachLytics - Early Access Landing Page
+# CoachLytix - Early Access Landing Page
 
-A single-page static website built to capture early access sign-ups for the CoachLytics golf coaching platform.
+A single-page static website built to capture early access sign-ups for the CoachLytix golf coaching platform.
 
 ## 🎯 Purpose
 
-This landing page validates early interest for the upcoming CoachLytics platform. Visitors can quickly understand what CoachLytics does and join the early-access waitlist by submitting their name and email address.
+This landing page validates early interest for the upcoming CoachLytix platform. Visitors can quickly understand what CoachLytix does and join the early-access waitlist by submitting their name and email address.
 
 ## 🚀 Quick Start
 
@@ -47,7 +47,7 @@ This landing page validates early interest for the upcoming CoachLytics platform
 
 ### Step 1: Create GitHub Repository
 
-1. Create a new repository on GitHub (e.g., `coachlytics-landing`)
+1. Create a new repository on GitHub (e.g., `coachlytix-landing`)
 2. Upload your files to the repository
 
 ### Step 2: Enable GitHub Pages
@@ -63,12 +63,12 @@ This landing page validates early interest for the upcoming CoachLytics platform
 
 Your site will be available at:
 ```
-https://yourusername.github.io/coachlytics-landing/
+https://yourusername.github.io/coachlytix-landing/
 ```
 
 ### Step 4: Custom Domain (Optional)
 
-1. Purchase a domain (e.g., `coachlytics.com`)
+1. Purchase a domain (e.g., `coachlytix.com`)
 2. In GitHub Pages settings, add your custom domain
 3. Update your DNS with a CNAME record pointing to `yourusername.github.io`
 4. Wait for DNS propagation (up to 24 hours)
@@ -187,12 +187,12 @@ To add Google Analytics:
 
 ## 📄 License
 
-This project is created for CoachLytics. All rights reserved.
+This project is created for CoachLytix. All rights reserved.
 
 ## 📞 Support
 
 For questions or issues:
-- Email: hello@coachlytics.com
+- Email: hello@coachlytix.com
 - GitHub Issues: Create an issue in this repository
 
 ---
