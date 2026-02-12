@@ -3,196 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoachLytix - The Easiest Way for Golf Coaches to Manage Players and Lessons</title>
-    <meta name="description" content="Keep notes, swing videos, and player progress in one simple dashboard. Join early access and get 3 months free.">
+    <title>CoachLytix - Golf Coaching Made Simple</title>
+    <meta name="description" content="CoachLytix helps golf coaches organize students, lessons, and progress tracking in one simple platform. Replace spreadsheets and notebooks with professional coaching tools.">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://coachlytics.com/">
-    <meta property="og:title" content="CoachLytix - Golf Coach Management Platform">
-    <meta property="og:description" content="The easiest way for golf coaches to manage players and lessons. Join early access and get 3 months free.">
+    <meta property="og:title" content="CoachLytix - Golf Coaching Made Simple">
+    <meta property="og:description" content="CoachLytix helps golf coaches organize students, lessons, and progress tracking in one simple platform.">
     <meta property="og:image" content="https://coachlytics.com/assets/og-image.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://coachlytics.com/">
-    <meta property="twitter:title" content="CoachLytix - Golf Coach Management Platform">
-    <meta property="twitter:description" content="The easiest way for golf coaches to manage players and lessons. Join early access and get 3 months free.">
+    <meta property="twitter:title" content="CoachLytix - Golf Coaching Made Simple">
+    <meta property="twitter:description" content="CoachLytix helps golf coaches organize students, lessons, and progress tracking in one simple platform.">
     <meta property="twitter:image" content="https://coachlytics.com/assets/og-image.jpg">
 
     <!-- TailwindCSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Lucide Icons CDN - Using a specific stable version -->
+    <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@0.294.0/dist/umd/lucide.js"></script>
     
     <!-- Custom Styles -->
     <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="min-h-screen flex items-center justify-center px-4 sm:px-6 py-12 sm:py-16 relative overflow-hidden">
-        <!-- Background gradient -->
-        <div class="absolute inset-0 bg-gradient-to-br from-green-50 via-white to-green-100"></div>
-        
-        <div class="section-width text-center relative z-10">
-            <!-- Logo/Brand -->
-            <div class="mb-6 sm:mb-8">
-                <h2 class="text-xl sm:text-2xl font-bold text-green-600 mb-2">CoachLytix</h2>
-                <div class="w-12 sm:w-16 h-1 bg-green-500 mx-auto rounded-full"></div>
-            </div>
-            
-            <!-- Main Headline -->
-            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 leading-tight px-2">
-                The easiest way for golf coaches to 
-                <span class="text-green-600 block sm:inline">manage players</span> and lessons
-            </h1>
-            
-            <!-- Subheadline -->
-            <p class="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto leading-relaxed px-2">
-                Keep notes, swing videos, and player progress in one simple dashboard — 
-                <strong class="block sm:inline">no more spreadsheets or WhatsApp chaos.</strong>
-            </p>
-            
-            <!-- CTA Button -->
-            <div class="mb-8 sm:mb-12 px-4">
-                <a href="#signup" class="btn-primary inline-block text-base sm:text-lg px-6 sm:px-10 py-3 sm:py-4 rounded-xl shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto">
-                    Join Early Access – Get 3 Months Free
-                </a>
-                <p class="text-xs sm:text-sm text-gray-500 mt-3">No credit card required • Built by golf coaches</p>
-            </div>
-            
-            <!-- Trust Indicators -->
-            <div class="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-8 text-xs sm:text-sm text-gray-500 px-4">
-                <div class="flex items-center gap-2 trust-indicator">
-                    <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
-                    <span>Free for early adopters</span>
-                </div>
-                <div class="flex items-center gap-2 trust-indicator">
-                    <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
-                    <span>No setup required</span>
-                </div>
-                <div class="flex items-center gap-2 trust-indicator">
-                    <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
-                    <span>Built for coaches</span>
-                </div>
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-logo">CoachLytix</a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#signup">Sign Up</a>
             </div>
         </div>
-        
-        <!-- Decorative elements - hidden on mobile -->
-        <div class="hidden sm:block absolute top-20 left-10 w-20 h-20 bg-green-200 rounded-full opacity-20 decorative-circle"></div>
-        <div class="hidden sm:block absolute bottom-20 right-10 w-32 h-32 bg-green-300 rounded-full opacity-10 decorative-circle"></div>
-    </section>
+    </nav>
 
-    <!-- Problem Section -->
-    <section class="py-12 sm:py-16 px-4 sm:px-6 bg-white relative">
-        <!-- Section Divider -->
-        <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
-        
-        <div class="section-width text-center">
-            <p class="text-base sm:text-lg text-gray-700 leading-relaxed px-2">
-                Most golf coaches juggle notes, messages, and spreadsheets just to stay organised.<br class="hidden sm:block">
-                <strong class="block sm:inline mt-2 sm:mt-0">CoachLytix replaces all that with one clean dashboard built for coaches.</strong>
-            </p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    Golf Coaching Made <span class="text-primary">Simple</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Organize your students, track lessons, and manage progress all in one professional platform. 
+                    Replace spreadsheets, notebooks, and WhatsApp with CoachLytix.
+                </p>
+            </div>
+            <div class="hero-image">
+                <div class="hero-mockup">
+                    <div class="mockup-screen">
+                        <div class="mockup-header">
+                            <div class="mockup-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="mockup-content">
+                            <div class="mockup-nav">
+                                <div class="mockup-nav-item active">Dashboard</div>
+                                <div class="mockup-nav-item">Players</div>
+                                <div class="mockup-nav-item">Lessons</div>
+                            </div>
+                            <div class="mockup-dashboard">
+                                <div class="mockup-card">
+                                    <h4>Recent Lessons</h4>
+                                    <div class="mockup-lesson">
+                                        <span class="lesson-player">Alex Johnson</span>
+                                        <span class="lesson-focus">Putting</span>
+                                    </div>
+                                    <div class="mockup-lesson">
+                                        <span class="lesson-player">Sarah Chen</span>
+                                        <span class="lesson-focus">Driving</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-cta-block">
+                <div class="hero-actions">
+                    <button type="button" id="watchDemoBtn" class="btn-primary btn-large">Watch the demo</button>
+                    <a href="#features" class="btn-outline btn-large">Learn More</a>
+                </div>
+                <p class="hero-launch-line">Launching 1st March</p>
+            </div>
         </div>
     </section>
 
     <!-- Features Section -->
-    <section class="py-16 sm:py-20 px-4 sm:px-6 bg-gray-50 relative">
-        <!-- Background Pattern -->
-        <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-10 left-10 w-32 h-32 bg-green-500 rounded-full"></div>
-            <div class="absolute bottom-10 right-10 w-24 h-24 bg-green-400 rounded-full"></div>
-            <div class="absolute top-1/2 left-1/4 w-16 h-16 bg-green-300 rounded-full"></div>
-        </div>
-        
+    <section id="features" class="py-16 sm:py-20 px-4 sm:px-6 bg-gray-50 relative">
         <div class="section-width relative z-10">
-            <!-- Section Header -->
-            <div class="text-center mb-12 sm:mb-16">
-                <div class="inline-flex items-center gap-2 bg-green-100 text-green-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
-                    <span class="w-2 h-2 bg-green-500 rounded-full"></span>
-                    Features
-                </div>
-                <h2 class="text-3xl sm:text-4xl font-bold mb-4 px-2">
-                    Everything you need in 
-                    <span class="text-green-600">one place</span>
-                </h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto px-2">
-                    Stop juggling multiple tools. CoachLytix brings all your coaching essentials together.
-                </p>
+            <div class="section-header">
+                <h2>Everything You Need to Coach Better</h2>
+                <p>Simple tools designed specifically for golf coaches</p>
             </div>
             
-            <!-- Features Grid -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-                <!-- Player Profiles -->
+            <div class="features-grid">
                 <div class="feature-card text-center group hover:shadow-xl transition-all duration-300">
-                    <div class="mb-4 flex justify-center">
-                        <i data-lucide="users" class="w-12 h-12 text-green-600"></i>
+                    <div class="feature-icon mx-auto">
+                        <i data-lucide="users" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Player Profiles</h3>
-                    <p class="text-gray-600 leading-relaxed">Store player info, lesson history, and notes in organized profiles.</p>
+                    <h3>Player Management</h3>
+                    <p>Keep all your students organized with profiles, contact info, handicaps, and progress tracking.</p>
                 </div>
-
-                <!-- Video Library -->
+                
                 <div class="feature-card text-center group hover:shadow-xl transition-all duration-300">
-                    <div class="mb-4 flex justify-center">
-                        <i data-lucide="video" class="w-12 h-12 text-green-600"></i>
+                    <div class="feature-icon mx-auto">
+                        <i data-lucide="target" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Video Library</h3>
-                    <p class="text-gray-600 leading-relaxed">Attach swing clips or YouTube links to lessons for easy reference.</p>
+                    <h3>Lesson Tracking</h3>
+                    <p>Record lesson details, focus areas, notes, and attach swing videos for easy reference.</p>
                 </div>
-
-                <!-- Lesson History -->
+                
                 <div class="feature-card text-center group hover:shadow-xl transition-all duration-300">
-                    <div class="mb-4 flex justify-center">
-                        <i data-lucide="calendar" class="w-12 h-12 text-green-600"></i>
+                    <div class="feature-icon mx-auto">
+                        <i data-lucide="trending-up" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Lesson History</h3>
-                    <p class="text-gray-600 leading-relaxed">Instantly recall what you covered last time with detailed history.</p>
+                    <h3>Progress Analytics</h3>
+                    <p>See improvement trends, lesson frequency, and performance insights at a glance.</p>
                 </div>
-
-                <!-- Smart Search -->
+                
                 <div class="feature-card text-center group hover:shadow-xl transition-all duration-300">
-                    <div class="mb-4 flex justify-center">
-                        <i data-lucide="search" class="w-12 h-12 text-green-600"></i>
+                    <div class="feature-icon mx-auto">
+                        <i data-lucide="monitor" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Smart Search</h3>
-                    <p class="text-gray-600 leading-relaxed">Find players or lessons in seconds with powerful search.</p>
+                    <h3>Video Library</h3>
+                    <p>Store and organize swing videos, drills, and instructional content for each student.</p>
                 </div>
-
-                <!-- Progress Tracking -->
+                
                 <div class="feature-card text-center group hover:shadow-xl transition-all duration-300">
-                    <div class="mb-4 flex justify-center">
-                        <i data-lucide="trending-up" class="w-12 h-12 text-green-600"></i>
+                    <div class="feature-icon mx-auto">
+                        <i data-lucide="alert-triangle" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">Progress Tracking</h3>
-                    <p class="text-gray-600 leading-relaxed">Visual overview of improvement trends and player development.</p>
+                    <h3>Retention Signals</h3>
+                    <p>Identify students who are struggling and take action before it's too late.</p>
                 </div>
-
-                <!-- AI Insights -->
-                <div class="feature-card text-center group hover:shadow-xl transition-all duration-300 sm:col-span-2 lg:col-span-1">
-                    <div class="mb-4 flex justify-center">
-                        <i data-lucide="brain" class="w-12 h-12 text-green-600"></i>
+                
+                <div class="feature-card text-center group hover:shadow-xl transition-all duration-300">
+                    <div class="feature-icon mx-auto">
+                        <i data-lucide="share-2" class="w-10 h-10"></i>
                     </div>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-900">AI Insights</h3>
-                    <p class="text-gray-600 leading-relaxed">Get personalized recommendations and coaching insights powered by AI.</p>
+                    <h3>Easy Sharing</h3>
+                    <p>Export lesson summaries and share progress reports with students and parents.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Final CTA Section -->
+    <!-- Why Coaches Care Section: Before → After -->
+    <section class="how-it-works why-coaches-care-section">
+        <div class="how-it-works-container">
+            <div class="section-header why-coaches-care-header">
+                <h2>Why coaches care</h2>
+                <p>Sound familiar?</p>
+            </div>
+            
+            <div class="before-after-grid">
+                <article class="before-after-card">
+                    <div class="before-after-label before-label">Before</div>
+                    <p class="before-after-text before-text">Lesson notes across WhatsApp, notebooks, spreadsheets</p>
+                    <div class="before-after-label after-label">After</div>
+                    <p class="before-after-text after-text">One organised lesson timeline per player</p>
+                </article>
+                <article class="before-after-card">
+                    <div class="before-after-label before-label">Before</div>
+                    <p class="before-after-text before-text">Forgetting what you worked on last time</p>
+                    <div class="before-after-label after-label">After</div>
+                    <p class="before-after-text after-text">Instant recall before every session</p>
+                </article>
+                <article class="before-after-card">
+                    <div class="before-after-label before-label">Before</div>
+                    <p class="before-after-text before-text">Players quietly drifting away</p>
+                    <div class="before-after-label after-label">After</div>
+                    <p class="before-after-text after-text">Clear signals when follow-ups are needed</p>
+                </article>
+                <article class="before-after-card">
+                    <div class="before-after-label before-label">Before</div>
+                    <p class="before-after-text before-text">Players forgetting key points from last lesson</p>
+                    <div class="before-after-label after-label">After</div>
+                    <p class="before-after-text after-text">Automatic lesson updates sent to players</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Form Section -->
     <section id="signup" class="py-16 sm:py-20 px-4 sm:px-6 bg-gradient-to-br from-green-50 to-green-100 relative">
         <!-- Section Divider -->
         <div class="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-green-500 to-transparent"></div>
         
         <div class="section-width text-center relative z-10">
             <h2 class="text-3xl sm:text-4xl font-bold mb-4 sm:mb-6 px-2">
-                Built with real 
-                <span class="text-green-600">golf coaches</span>
+                Ready to Transform Your Coaching?
             </h2>
             <p class="text-lg sm:text-xl text-gray-600 mb-8 sm:mb-12 px-2 max-w-2xl mx-auto">
-                Join early access and help shape CoachLytix. Your feedback drives our development.
+                Sign up now to receive 3 months of full access when we launch on 1st March.
+                No payment details required.
             </p>
             
             <!-- Formspree Form -->
@@ -215,7 +227,7 @@
                 
                 <!-- Submit Button -->
                 <button type="submit" id="submitBtn" class="btn-primary w-full text-base sm:text-lg py-3 sm:py-4 rounded-xl">
-                    <span class="btn-text">Join Early Access</span>
+                    <span class="btn-text">Get launch access</span>
                     <span class="btn-loading hidden">Joining...</span>
                 </button>
                 
@@ -229,6 +241,23 @@
             </form>
         </div>
     </section>
+
+    <!-- Demo Video Modal -->
+    <div id="demoModal" class="video-modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="demoModalTitle">
+        <div class="video-modal">
+            <button type="button" class="video-modal-close" aria-label="Close video">&times;</button>
+            <div class="video-modal-iframe-wrapper">
+                <iframe
+                    id="demoVideo"
+                    src=""
+                    title="CoachLytix product demo"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="py-6 sm:py-8 px-4 sm:px-6 bg-gray-900 text-white">
@@ -440,17 +469,6 @@
                 }
             });
 
-            // Simple theme toggle functionality
-            function toggleTheme() {
-                document.body.classList.toggle('theme-dark');
-                localStorage.setItem('theme', document.body.classList.contains('theme-dark') ? 'dark' : 'light');
-            }
-
-            // Load saved theme
-            if (localStorage.getItem('theme') === 'dark') {
-                document.body.classList.add('theme-dark');
-            }
-
             // Smooth scrolling for anchor links
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -463,6 +481,54 @@
                         });
                     }
                 });
+            });
+
+            // Demo video modal logic
+            const watchDemoBtn = document.getElementById('watchDemoBtn');
+            const demoModal = document.getElementById('demoModal');
+            const demoVideo = document.getElementById('demoVideo');
+            const modalCloseBtn = document.querySelector('.video-modal-close');
+
+            function openDemoModal() {
+                if (!demoModal || !demoVideo) return;
+                demoModal.classList.remove('hidden');
+                demoVideo.src = 'https://www.youtube.com/embed/m-s8L9xOOJQ?autoplay=1';
+            }
+
+            function closeDemoModal() {
+                if (!demoModal || !demoVideo) return;
+                demoModal.classList.add('hidden');
+                // Stop the video when the modal is closed
+                demoVideo.src = '';
+            }
+
+            if (watchDemoBtn) {
+                watchDemoBtn.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    openDemoModal();
+                });
+            }
+
+            if (modalCloseBtn) {
+                modalCloseBtn.addEventListener('click', function () {
+                    closeDemoModal();
+                });
+            }
+
+            // Close when clicking outside the video
+            if (demoModal) {
+                demoModal.addEventListener('click', function (e) {
+                    if (e.target === demoModal) {
+                        closeDemoModal();
+                    }
+                });
+            }
+
+            // Close on Escape key
+            document.addEventListener('keydown', function (e) {
+                if (e.key === 'Escape' && demoModal && !demoModal.classList.contains('hidden')) {
+                    closeDemoModal();
+                }
             });
         });
         
