@@ -270,7 +270,6 @@ nav {
     border-radius: 0.5rem;
     font-size: 0.875rem;
     color: var(--color-subtext);
-    cursor: pointer;
 }
 
 .mockup-nav-item.active {
